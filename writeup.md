@@ -31,7 +31,7 @@ The goals / steps of this project are the following:
 
 ## Data Set Summary & Exploration
 
-This project's data is (German Traffic Data Set](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) for creating model.
+This project's data is [German Traffic Data Set](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) for creating model.
 
 * The size of training set is 34799.
 * The size of test set is 12630.
@@ -44,7 +44,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 ## Design and Test a Model Architecture
 
-### Preprocessed the image data
+### Preprocessed the Image Data
 
 #### Grayscale
 
@@ -54,7 +54,8 @@ I converted traning images from RGB to grayscale image for cutting calculate cos
 
 I normalized traning images for stretching contrast.
 
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+### Model Architecture
+2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 My final model consisted of the following layers:
 
@@ -72,16 +73,18 @@ My final model consisted of the following layers:
  
 
 
-####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+### How To Train My Model
+3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 To train the model, I used an ....
 
-####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+### ??
+4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 0.930
+* validation set accuracy of 0.930
+* test set accuracy of 0.915
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
