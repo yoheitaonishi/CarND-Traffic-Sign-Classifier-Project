@@ -29,7 +29,7 @@ I converted traning images from RGB to grayscale image for cutting calculate cos
 
 I normalized traning images for stretching contrast.
 
-## Model Architecture
+### Model Architecture
 
 My final model consisted of the following layers:
 
@@ -53,10 +53,9 @@ My final model consisted of the following layers:
 
 * Convolution layer's output is calcuated by W -2[H/2] * W -2[H/2]. ([・] is round down.) When input data is 32x32 and filter is 5x5, output data is 28x28. 
 * RELU means rectified linear unit. f(u) = max(u, 0)
-* Fully connected layer...
 * Softmax layer decides output by each inputs not sum of inputs.
 
-## How To Train My Model
+### How To Train My Model
 
 | Optimizer         		|     Batch Size	        					| Number of epochs | Learning rate |
 |:---------------------:|:---------------------------------------------:|:-----------:|:------------:|
@@ -70,14 +69,14 @@ My final model results were:
 ## Test a Model on New Images
 
 ### How to Test Model
-1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
 
 <img src="./test_images/1.jpg" width="200px" height="200px" style="float: left;"> <img src="./test_images/2.jpg" width="200px" height="200px"> <img src="./test_images/3.jpg" width="200px" height="200px">  
 <img src="./test_images/4.jpg" width="200px" height="200px" style="float: left;"> <img src="./test_images/5.jpg" width="200px" height="200px"> <img src="./test_images/6.jpg" width="200px" height="200px">
 
-The first image might be difficult to classify because ...
+The second image might be difficult to classify because it includes two signs which are `stop` and `Keep Right`.
+
 
 ### Test Discussion
 
@@ -96,22 +95,49 @@ Here are the results of the prediction:
 The model was able to correctly guess 5 of the 6 traffic signs, which gives an accuracy of 83%. This compares favorably to the accuracy on the test set, the accuracy on the test set is better than one of new traffic signs from website. I think this fact comes from number of images. The accuracy of new traffic signs from website will be better if number of them increases.
 
 ### Softmax Probabilities
-3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+<img src="./test_images/1.jpg" width="200px" height="200px" style="float: left;"> 
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+|:---------------------:|:---------------------------------------------:| 
+| Probability         	|     Prediction	        					| 
+| 100.00%         			| Yield   									| 
+
+<img src="./test_images/2.jpg" width="200px" height="200px" style="float: left;">
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 95.83%         			| Keep right   									| 
+| 4.14%         			| End of no passing by vehicles over 3.5 metric tons   									| 
+| 0.03%         			| Turn left ahead   									| 
+| 0.01%         			| No passing for vehicles over 3.5 metric tons   									| 
 
+<img src="./test_images/3.jpg" width="200px" height="200px" style="float: left;">
 
-For the second image ... 
+|:---------------------:|:---------------------------------------------:| 
+| Probability         	|     Prediction	        					| 
+| 100.00%         			| Slippery road   									| 
+
+<img src="./test_images/4.jpg" width="200px" height="200px" style="float: left;">
+
+|:---------------------:|:---------------------------------------------:| 
+| Probability         	|     Prediction	        					| 
+| 98.95%         			| Road work   									| 
+| 1.00%         			| Slippery road   									| 
+| 0.05%         			| No passing for vehicles over 3.5 metric tons   									| 
+
+<img src="./test_images/5.jpg" width="200px" height="200px" style="float: left;">
+
+|:---------------------:|:---------------------------------------------:| 
+| Probability         	|     Prediction	        					| 
+| 99.93%         			| Children crossing   									| 
+| 0.07%        			| Road narrows on the right   									| 
+
+<img src="./test_images/6.jpg" width="200px" height="200px" style="float: left;">
+
+|:---------------------:|:---------------------------------------------:| 
+| Probability         	|     Prediction	        					| 
+| 100.00%         			| No entry   									| 
+
 
 ## TODO
 * (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
