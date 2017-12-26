@@ -66,6 +66,10 @@ My final model results were:
 * validation set accuracy of 0.930
 * test set accuracy of 0.915
 
+### Solution Approach
+
+I adjusted hyperparameter especially learning rate, epochs and batch size to achieve validation set accuracy of 0.930.
+
 ## Test a Model on New Images
 
 ### How to Test Model
@@ -98,8 +102,8 @@ The model was able to correctly guess 5 of the 6 traffic signs, which gives an a
 
 <img src="./test_images/1.jpg" width="200px" height="200px" style="float: left;"> 
 
-|:---------------------:|:---------------------------------------------:| 
 | Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
 | 100.00%         			| Yield   									| 
 
 <img src="./test_images/2.jpg" width="200px" height="200px" style="float: left;">
@@ -113,29 +117,29 @@ The model was able to correctly guess 5 of the 6 traffic signs, which gives an a
 
 <img src="./test_images/3.jpg" width="200px" height="200px" style="float: left;">
 
-|:---------------------:|:---------------------------------------------:| 
 | Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
 | 100.00%         			| Slippery road   									| 
 
 <img src="./test_images/4.jpg" width="200px" height="200px" style="float: left;">
 
-|:---------------------:|:---------------------------------------------:| 
 | Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
 | 98.95%         			| Road work   									| 
 | 1.00%         			| Slippery road   									| 
 | 0.05%         			| No passing for vehicles over 3.5 metric tons   									| 
 
 <img src="./test_images/5.jpg" width="200px" height="200px" style="float: left;">
 
-|:---------------------:|:---------------------------------------------:| 
 | Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
 | 99.93%         			| Children crossing   									| 
 | 0.07%        			| Road narrows on the right   									| 
 
 <img src="./test_images/6.jpg" width="200px" height="200px" style="float: left;">
 
-|:---------------------:|:---------------------------------------------:| 
 | Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
 | 100.00%         			| No entry   									| 
 
 
